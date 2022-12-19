@@ -1,0 +1,77 @@
+<div class="container title mt-4">
+    <div class="row">
+        <div class="col">
+            <h1>Contact Management App
+                <a routerLink="/contacts/add" class="btn btn-success">
+                    <i class="fa-solid fa-user-plus"></i> &nbsp;
+                    Add New
+
+                </a>
+            </h1>
+
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum pariatur
+                sequi qui eos voluptate assumenda
+                culpa ducimus aspernatur voluptates, voluptatibus consequatur? Aspernatur, impedit dicta tenetur
+                inventore enim libero ut optio? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
+                aliquam quo laboriosam enim ipsa ipsum cum accusamus ab, id possimus eius eaque deleniti eum voluptate
+                voluptates blanditiis ad sint molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti, ullam accusantium. Veniam, libero dicta sint voluptate quisquam amet sed. Consequuntur vero
+                magni beatae dignissimos iure ad quidem obcaecati quis quibusdam?
+            </p>
+            <div class="row">
+                <div class="col-6">
+                    <input (keyup)="search($event)" type="text" class="form-control" placeholder="search contact">
+                </div>
+                <div class="col-6">
+                    <!-- <button class="btn btn-outline-dark">search</button> -->
+                </div>
+            </div>
+
+
+            <!-- <pre>
+                {{allContacts | json}}
+            </pre> -->
+
+
+
+            <!-- card -desing  -->
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-6 mt-3" *ngFor="let contacts of allContacts | filter :searchkey : 'name' ">
+                        <div class="card list-group-item-secondary">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 mt-1">
+                                        <img height="180px" [src]="contacts.photo"
+                                            alt="no" class="contact_image">
+                                        </div>
+                                            <div class="col-md-8">
+                                                <!-- conatct details -->
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Name: <b>{{contacts.name}}</b></li>
+                                                    <li class="list-group-item">Email: <b>{{contacts.email}}</b></li>
+                                                    <li class="list-group-item">Mobile: <b>{{contacts.mobile}}</b></li>
+                                                    
+                                                  </ul>
+                                            </div>
+                                            <div class="col-md-1 d-flex flex-column justify-content-center align-items-center">
+                                                <a routerLink="/contacts/view/{{contacts.id}}" class="btn btn-warning">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </a>
+                                                <a routerLink="/contacts/edit/:contactId" class="btn btn-success mt-1">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                    <button class="btn btn-danger mt-1">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                            </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
