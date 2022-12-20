@@ -79,22 +79,34 @@
       "company": "Abernathy Group",
       "title": "Developer",
       "groupId": "4"
-    }
-  ],
-  "groups":[
-    {
-        "id":"1",
-        "name":"Friends"
     },
     {
-        "id":"2",
-        "name":"Family"
-    },{
-        "id":"3",
-        "name":"Collegues"
-    },{
-        "id":"4",
-        "name":"Social"
+      "id": "ca9",
+      "name": "messi",
+      "photo": "https://consideringapple.com/wp-content/uploads/2022/12/FkSrh4WXkAMs97k.jpg",
+      "email": "messi@gmail.com",
+      "mobile": "9876543221",
+      "company": "TENSER",
+      "title": "CEO",
+      "groupId": "1"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Friends"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Collegues"
+    },
+    {
+      "id": "4",
+      "name": "Social"
     }
   ]
 }

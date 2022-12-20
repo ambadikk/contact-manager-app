@@ -19,11 +19,22 @@ export class ContactmanagerComponent implements OnInit{
       
     })
   }
+  //get all contatc
+  getAllContact
   //search 
   search(event:any){
     console.log(event.target.value);
     this.searchkey=event.target.value
     
+  }
+
+  deleteContact(contactId:any){
+    this.api.deleteContact(contactId)
+    .subscribe(
+      (data:any)=>{
+        this.getAllContact()
+      }
+    )
   }
 
 }
