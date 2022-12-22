@@ -2,13 +2,13 @@
   "contacts": [
     {
       "id": "ca1",
-      "name": "Leanne Graham",
+      "name": "Leanne Graham king",
       "email": "Sincere@april.biz",
       "photo": "https://tse2.mm.bing.net/th?id=OIP.8srvO2PtBJk8dCezMndAtAHaJx&pid=Api&P=0",
       "mobile": "9876543210",
       "company": "Romaguera-Crona",
       "title": "Developer",
-      "groupId": "1"
+      "groupId": "groupId"
     },
     {
       "id": "ca2",
@@ -18,7 +18,7 @@
       "mobile": "9876543210",
       "company": "Deckow-Crist",
       "title": "Network Admin",
-      "groupId": "2"
+      "groupId": "groupId"
     },
     {
       "id": "ca3",
@@ -79,16 +79,6 @@
       "company": "Abernathy Group",
       "title": "Developer",
       "groupId": "4"
-    },
-    {
-      "id": "ca9",
-      "name": "messi",
-      "photo": "https://consideringapple.com/wp-content/uploads/2022/12/FkSrh4WXkAMs97k.jpg",
-      "email": "messi@gmail.com",
-      "mobile": "9876543221",
-      "company": "TENSER",
-      "title": "CEO",
-      "groupId": "1"
     }
   ],
   "groups": [
